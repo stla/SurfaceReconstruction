@@ -20,11 +20,11 @@
 
 #include <CGAL/Vector_3.h>
 
-#include <CGAL/Triangulation_vertex_base_with_info_2.h>
+//#include <CGAL/Triangulation_vertex_base_with_info_2.h>
 
 #include <CGAL/squared_distance_2.h>
 
-#include <CGAL/Triangulation_vertex_base_with_info_3.h>
+//#include <CGAL/Triangulation_vertex_base_with_info_3.h>
 
 #include <CGAL/utility.h>
 
@@ -43,7 +43,7 @@
 
 //#include <CGAL/Projection_traits_xy_3.h>
 
-#include <CGAL/Triangulation_face_base_with_info_2.h>
+//#include <CGAL/Triangulation_face_base_with_info_2.h>
 
 //#include <CGAL/Cartesian.h>
 

@@ -3,7 +3,7 @@
 #'
 #' @param points numeric matrix which stores the points, one point per row
 #'
-#' @return A triangular mesh, of class \code{mesh3d} (ready for plotting
+#' @return A triangle mesh, of class \code{mesh3d} (ready for plotting
 #'   with \strong{rgl}).
 #'
 #' @details See \href{https://doc.cgal.org/latest/Advancing_front_surface_reconstruction/index.html#Chapter_Advancing_Front_Surface_Reconstruction}{Advancing Front Surface Reconstruction}.
@@ -12,7 +12,8 @@
 #' @importFrom rgl tmesh3d
 #' @importFrom Rvcg vcgClean
 #'
-#' @examples library(RCGAL)
+#' @examples 
+#' library(SurfaceReconstruction)
 #' data(bunny, package = "onion")
 #' mesh <- AFSreconstruction(bunny)
 #' library(rgl)
@@ -34,7 +35,7 @@ AFSreconstruction <- function(
     stop("Points with missing values are not allowed.", call. = TRUE)
   }
   storage.mode(points) <- "double"
-  afs <- AFSreconstruction_cpp(points)
+  afs <- AFSreconstruction_cpp(t(points))
   rglmesh <- tmesh3d(
     afs[["vertices"]], afs[["triangles"]], normals = NULL, homogeneous = FALSE
   )#afs[["normals"]])

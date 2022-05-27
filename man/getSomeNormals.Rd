@@ -28,7 +28,7 @@ The \code{getSomeNormals} function is intended to be used in the
   check the matrix it takes as argument.
 }
 \examples{
-library(RCGAL)
+library(SurfaceReconstruction)
 library(rgl)
 psr <- PoissonReconstruction(ICN5D_eight, getSomeNormals(6))
 open3d()

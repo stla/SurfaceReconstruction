@@ -16,7 +16,8 @@
 #'   check the matrix it takes as argument.
 #' @export
 #'
-#' @examples library(RCGAL)
+#' @examples 
+#' library(SurfaceReconstruction)
 #' library(rgl)
 #' psr <- PoissonReconstruction(ICN5D_eight, getSomeNormals(6))
 #' open3d()
@@ -29,9 +30,9 @@ getSomeNormals <- function(nbNeighbors, method = "pca"){
     stop("There must be at least two neighbors.", call. = TRUE)
   }
   if(method == "pca"){
-    out <- function(points) pca_normals_cpp(points, nbNeighbors)
+    out <- function(points) pca_normals_cpp(t(points), nbNeighbors)
   }else{
-    out <- function(points) jet_normals_cpp(points, nbNeighbors)
+    out <- function(points) jet_normals_cpp(t(points), nbNeighbors)
   }
   class(out) <- "CGALnormalsFunc"
   out

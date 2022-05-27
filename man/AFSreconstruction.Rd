@@ -10,7 +10,7 @@ AFSreconstruction(points)
 \item{points}{numeric matrix which stores the points, one point per row}
 }
 \value{
-A triangular mesh, of class \code{mesh3d} (ready for plotting
+A triangle mesh, of class \code{mesh3d} (ready for plotting
   with \strong{rgl}).
 }
 \description{
@@ -20,7 +20,7 @@ Reconstruction of a surface from a cloud of 3D points.
 See \href{https://doc.cgal.org/latest/Advancing_front_surface_reconstruction/index.html#Chapter_Advancing_Front_Surface_Reconstruction}{Advancing Front Surface Reconstruction}.
 }
 \examples{
-library(RCGAL)
+library(SurfaceReconstruction)
 data(bunny, package = "onion")
 mesh <- AFSreconstruction(bunny)
 library(rgl)

@@ -16,7 +16,7 @@
 #' @param sm_radius relative bound for the radius of the surface Delaunay balls
 #' @param sm_distance relative bound for the center-center distances
 #'
-#' @return A triangular mesh, of class \code{mesh3d} (ready for plotting
+#' @return A triangle mesh, of class \code{mesh3d} (ready for plotting
 #'   with \strong{rgl}).
 #'
 #' @details See \href{https://doc.cgal.org/latest/Poisson_surface_reconstruction_3/index.html}{Poisson Surface Recnstruction}.
@@ -25,7 +25,8 @@
 #' @importFrom rgl tmesh3d addNormals
 #' @importFrom Rvcg vcgUpdateNormals
 #'
-#' @examples library(RCGAL)
+#' @examples 
+#' library(SurfaceReconstruction)
 #' Psr_mesh <- PoissonReconstruction(SolidMobiusStrip)
 #' library(rgl)
 #' shade3d(Psr_mesh, color= "yellow")
@@ -52,7 +53,7 @@ PoissonReconstruction <- function(
   }
   storage.mode(points) <- "double"
   if(is.null(normals)){
-    normals <- t(vcgUpdateNormals(points, silent = TRUE)[["normals"]][-4L, ])
+    normals <- vcgUpdateNormals(points, silent = TRUE)[["normals"]][-4L, ]
   }else if(is.function(normals) && inherits(normals, "CGALnormalsFunc")){
     normals <- normals(points)
   }else{
@@ -88,11 +89,11 @@ PoissonReconstruction <- function(
   stopifnot(isPositiveNumber(sm_radius))
   stopifnot(isPositiveNumber(sm_distance))
   Psr <- Poisson_reconstruction_cpp(
-    points, normals, spacing, sm_angle, sm_radius, sm_distance
+    t(points), normals, spacing, sm_angle, sm_radius, sm_distance
   )
-  out <-  addNormals(
+  out <- vcgUpdateNormals(
     tmesh3d(
-      t(Psr[["vertices"]]), t(Psr[["facets"]]), normals = NULL,
+      Psr[["vertices"]], Psr[["facets"]], normals = NULL,
       homogeneous = FALSE
     )
   )

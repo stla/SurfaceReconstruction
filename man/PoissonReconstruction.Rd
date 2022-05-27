@@ -35,7 +35,7 @@ value will be displayed in a message and that you can also get in the
 \item{sm_distance}{relative bound for the center-center distances}
 }
 \value{
-A triangular mesh, of class \code{mesh3d} (ready for plotting
+A triangle mesh, of class \code{mesh3d} (ready for plotting
   with \strong{rgl}).
 }
 \description{
@@ -45,7 +45,7 @@ Poisson reconstruction of a surface, from a cloud of 3D points.
 See \href{https://doc.cgal.org/latest/Poisson_surface_reconstruction_3/index.html}{Poisson Surface Recnstruction}.
 }
 \examples{
-library(RCGAL)
+library(SurfaceReconstruction)
 Psr_mesh <- PoissonReconstruction(SolidMobiusStrip)
 library(rgl)
 shade3d(Psr_mesh, color= "yellow")
