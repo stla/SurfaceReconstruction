@@ -1,5 +1,5 @@
-library(RCGAL)
-library(rgl)
+library(SurfaceReconstruction, lib.loc = "C:/SL/Rloclib")
+library(rgl, lib.loc = "C:/SL/Rloclib")
 
 data(bunny, package = "onion")
 mesh <- AFSreconstruction(bunny)

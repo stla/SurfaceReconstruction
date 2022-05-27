@@ -10,72 +10,72 @@ Wrapping the C++ library **CGAL** in R. Convex hull, Delaunay tessellation, surf
 
 *Toroidal helix:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/ToroidalHelix.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/ToroidalHelix.png)
 
 *Spider cage:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/SpiderCage.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/SpiderCage.png)
 
 *Solid Möbius strip:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/SolidMobiusStrip.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/SolidMobiusStrip.png)
 
 *Hopf torus:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/HopfTorus.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/HopfTorus.png)
 
 The Hopf torus is not very smooth. We can make it a bit smoother by reducing 
 the `spacing` parameter of the `PoissonReconstruction` function:
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/HopfTorusMesh_spacing02.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/HopfTorusMesh_spacing02.png)
 
 Here is a series of three images which show the effect of this `spacing` 
 parameter (0.05, 0.02, 0.005):
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/SolidMobiusStrip_spacings.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/SolidMobiusStrip_spacings.png)
 
 *Dupin cyclide:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/cyclide.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/cyclide.png)
 
 *Clifford torus:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/CliffordTorus.gif)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/CliffordTorus.gif)
 
 *Orthocircle:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/Orthocircle.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/Orthocircle.png)
 
 *ICN5D's eight-like surface:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/ICN5D_eight.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/ICN5D_eight.png)
 
 *Stanford bunny:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/StanfordBunny.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/StanfordBunny.png)
 
 *Stanford dragon:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/PoissonExamples/StanfordDragon.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/PoissonExamples/StanfordDragon.png)
 
 
 ## Advanced front surface reconstruction
 
 *Stanford bunny:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/AFSexamples/Bunny.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/AFSexamples/Bunny.png)
 
 *Stanford dragon:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/AFSexamples/StanfordDragon.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/AFSexamples/StanfordDragon.png)
 
 *Dummy head:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/AFSexamples/DummyHead.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/AFSexamples/DummyHead.png)
 
 *Skull:*
 
-![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/main/inst/AFSexamples/Skull.png)
+![](https://raw.githubusercontent.com/stla/SurfaceReconstruction/master/inst/AFSexamples/Skull.png)
 
 
 ## License
