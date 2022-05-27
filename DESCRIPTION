@@ -1,0 +1,20 @@
+Package: SurfaceReconstruction
+Type: Package
+Title: An Incomplete Wrapper of the 'CGAL' C++ Library
+Version: 0.0.9000
+Author: Stéphane Laurent
+Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
+Description: Partly wraps the 'CGAL' C++ library. Can perform convex hull construction and Delaunay tessellation in 2D or 3D, including elevated Delaunay triangulation, constrained 2D Delaunay triangulation, and provides some surface reconstruction techniques: Poisson surface reconstruction and advanced front surface reconstruction.
+Encoding: UTF-8
+License: GPL-3
+Imports: Rcpp (>= 1.0.7), rgl, Rvcg, randomcoloR, graphics, utils, gplots
+LinkingTo: Rcpp, RcppCGAL, RcppEigen
+Suggests: onion, uniformly, misc3d, BH
+SystemRequirements: C++ 14, gmp, mpfr
+URL: https://github.com/stla/SurfaceReconstruction
+BugReports: https://github.com/stla/SurfaceReconstruction/issues
+RoxygenNote: 7.2.0
+Depends: 
+    R (>= 2.10)
+LazyData: true
+LazyDataCompression: bzip2
