@@ -22,7 +22,7 @@
 #' @details See \href{https://doc.cgal.org/latest/Poisson_surface_reconstruction_3/index.html}{Poisson Surface Recnstruction}.
 #'
 #' @export
-#' @importFrom rgl tmesh3d addNormals
+#' @importFrom rgl tmesh3d
 #' @importFrom Rvcg vcgUpdateNormals
 #'
 #' @examples 
