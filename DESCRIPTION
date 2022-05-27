@@ -9,7 +9,7 @@ Encoding: UTF-8
 License: GPL-3
 Imports: Rcpp (>= 1.0.7), rgl, Rvcg, randomcoloR, graphics, utils, gplots
 LinkingTo: Rcpp, RcppCGAL, RcppEigen
-Suggests: onion, uniformly, misc3d, BH
+Suggests: onion, uniformly, misc3d, BH, gmp
 SystemRequirements: C++ 14, gmp, mpfr
 URL: https://github.com/stla/SurfaceReconstruction
 BugReports: https://github.com/stla/SurfaceReconstruction/issues
