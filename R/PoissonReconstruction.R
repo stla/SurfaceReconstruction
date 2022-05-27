@@ -53,7 +53,7 @@ PoissonReconstruction <- function(
   }
   storage.mode(points) <- "double"
   if(is.null(normals)){
-    normals <- t(vcgUpdateNormals(points, silent = TRUE)[["normals"]][-4L, ])
+    normals <- vcgUpdateNormals(points, silent = TRUE)[["normals"]][-4L, ]
   }else if(is.function(normals) && inherits(normals, "CGALnormalsFunc")){
     normals <- normals(points)
   }else{
