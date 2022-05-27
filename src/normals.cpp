@@ -33,7 +33,7 @@ Rcpp::NumericMatrix jet_normals_cpp(const Rcpp::NumericMatrix pts,
     normals(Rcpp::_, i) = normal_i;
   }
 
-  return Rcpp::transpose(normals);
+  return normals;
 }
 
 // [[Rcpp::export]]
@@ -67,5 +67,5 @@ Rcpp::NumericMatrix pca_normals_cpp(Rcpp::NumericMatrix pts,
     normals(Rcpp::_, i) = normal_i;
   }
 
-  return Rcpp::transpose(normals);
+  return normals;
 }

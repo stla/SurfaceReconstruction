@@ -19,7 +19,7 @@
 #' @return A triangle mesh, of class \code{mesh3d} (ready for plotting
 #'   with \strong{rgl}).
 #'
-#' @details See \href{https://doc.cgal.org/latest/Poisson_surface_reconstruction_3/index.html}{Poisson Surface Recnstruction}.
+#' @details See \href{https://doc.cgal.org/latest/Poisson_surface_reconstruction_3/index.html}{Poisson Surface Reconstruction}.
 #'
 #' @export
 #' @importFrom rgl tmesh3d
