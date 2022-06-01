@@ -1,7 +1,8 @@
 # SurfaceReconstruction
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/stla/SurfaceReconstruction/workflows/R-CMD-check/badge.svg)](https://github.com/stla/SurfaceReconstruction/actions)
+[![R-CMD-check](https://github.com/stla/SurfaceReconstruction/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/stla/SurfaceReconstruction/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check-valgrind](https://github.com/stla/SurfaceReconstruction/actions/workflows/R-CMD-check-valgrind.yaml/badge.svg)](https://github.com/stla/SurfaceReconstruction/actions/workflows/R-CMD-check-valgrind.yaml)
 <!-- badges: end -->
 
 Wrapping the C++ library **CGAL** in R. Convex hull, Delaunay tessellation, surface reconstruction.
