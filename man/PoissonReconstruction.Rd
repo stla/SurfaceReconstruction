@@ -42,12 +42,19 @@ A triangle mesh, of class \code{mesh3d} (ready for plotting
 Poisson reconstruction of a surface, from a cloud of 3D points.
 }
 \details{
-See \href{https://doc.cgal.org/latest/Poisson_surface_reconstruction_3/index.html}{Poisson Surface Recnstruction}.
+See \href{https://doc.cgal.org/latest/Poisson_surface_reconstruction_3/index.html}{Poisson Surface Reconstruction}.
 }
 \examples{
 library(SurfaceReconstruction)
-Psr_mesh <- PoissonReconstruction(SolidMobiusStrip)
 library(rgl)
+
+# Solid Mobius strip 
+Psr_mesh <- PoissonReconstruction(SolidMobiusStrip)
 shade3d(Psr_mesh, color= "yellow")
+wire3d(Psr_mesh, color = "black")
+
+# Hopf torus
+Psr_mesh <- PoissonReconstruction(HopfTorus, spacing = 0.2)
+shade3d(Psr_mesh, color= "darkorange")
 wire3d(Psr_mesh, color = "black")
 }

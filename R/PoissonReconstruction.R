@@ -24,12 +24,20 @@
 #' @export
 #' @importFrom rgl tmesh3d
 #' @importFrom Rvcg vcgUpdateNormals
+#' 
 #'
 #' @examples 
 #' library(SurfaceReconstruction)
-#' Psr_mesh <- PoissonReconstruction(SolidMobiusStrip)
 #' library(rgl)
+#' 
+#' # Solid Mobius strip 
+#' Psr_mesh <- PoissonReconstruction(SolidMobiusStrip)
 #' shade3d(Psr_mesh, color= "yellow")
+#' wire3d(Psr_mesh, color = "black")
+#' 
+#' # Hopf torus
+#' Psr_mesh <- PoissonReconstruction(HopfTorus, spacing = 0.2)
+#' shade3d(Psr_mesh, color= "darkorange")
 #' wire3d(Psr_mesh, color = "black")
 PoissonReconstruction <- function(
   points, normals = NULL, spacing = NULL,

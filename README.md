@@ -88,4 +88,5 @@ commercial purposes, you must obtain a license from the
 
 ## Blog post
 
-I wrote a [blog post](https://laustep.github.io/stlahblog/posts/SurfaceReconstruction.html) devoted to **SurfaceReconstruction**.
+I wrote a [blog post](https://laustep.github.io/stlahblog/posts/SurfaceReconstruction.html) 
+devoted to surface reconstruction (using **RCGAL**, the ancestor of **SurfaceReconstruction**).
