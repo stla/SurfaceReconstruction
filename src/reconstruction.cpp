@@ -116,10 +116,12 @@ Rcpp::List AFSreconstruction_perimeter_cpp(Rcpp::NumericMatrix pts,
   const size_t nfacets = facets.size();
   Rcpp::IntegerMatrix triangles(3, nfacets);
   for(size_t j = 0; j < nfacets; j++) {
+    Rcpp::IntegerVector triangle_j(3);
     std::array<size_t, 3> facet = facets[j];
-    triangles(0, j) = facet[0] + 1;
-    triangles(1, j) = facet[1] + 1;
-    triangles(2, j) = facet[2] + 1;
+    triangle_j(0) = facet[0] + 1;
+    triangle_j(1) = facet[1] + 1;
+    triangle_j(2) = facet[2] + 1;
+    triangles(Rcpp::_, j) = triangle_j;
   }
 
   return Rcpp::List::create(Rcpp::Named("vertices") = pts,

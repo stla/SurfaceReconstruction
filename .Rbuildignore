@@ -9,3 +9,5 @@
 ^inst/PoissonExamples$
 ^\.Rprofile$
 ^inst/AFSexamples$
+^\.settings$
+^\.project$
