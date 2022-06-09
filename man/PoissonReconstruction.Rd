@@ -48,7 +48,7 @@ See \href{https://doc.cgal.org/latest/Poisson_surface_reconstruction_3/index.htm
 library(SurfaceReconstruction)
 library(rgl)
 
-# Solid Mobius strip 
+# Solid Möbius strip 
 Psr_mesh <- PoissonReconstruction(SolidMobiusStrip)
 shade3d(Psr_mesh, color= "yellow")
 wire3d(Psr_mesh, color = "black")

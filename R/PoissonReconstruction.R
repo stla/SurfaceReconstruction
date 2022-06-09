@@ -30,7 +30,7 @@
 #' library(SurfaceReconstruction)
 #' library(rgl)
 #' 
-#' # Solid Mobius strip 
+#' # Solid Möbius strip 
 #' Psr_mesh <- PoissonReconstruction(SolidMobiusStrip)
 #' shade3d(Psr_mesh, color= "yellow")
 #' wire3d(Psr_mesh, color = "black")
