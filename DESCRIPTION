@@ -1,20 +1,33 @@
-Package: SurfaceReconstruction
 Type: Package
+Package: SurfaceReconstruction
 Title: Surface Reconstruction Using the 'CGAL' C++ Library
 Version: 0.0.9000
 Author: Stéphane Laurent
 Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
-Description: Provides some 3d surface reconstruction algorithms: Poisson surface reconstruction and advanced front surface reconstruction.
-Encoding: UTF-8
+Description: Provides some 3d surface reconstruction algorithms: Poisson
+    surface reconstruction and advanced front surface reconstruction. They
+    generate a mesh from a given point cloud. The mesh can be plotted with
+    the 'rgl' package.
 License: GPL-3
-Imports: Rcpp (>= 1.0.7), rgl, Rvcg
-LinkingTo: Rcpp, RcppCGAL, RcppEigen
-Suggests: onion, uniformly, misc3d, BH
-SystemRequirements: C++ 14, gmp, mpfr
 URL: https://github.com/stla/SurfaceReconstruction
 BugReports: https://github.com/stla/SurfaceReconstruction/issues
-RoxygenNote: 7.2.0
 Depends: 
-    R (>= 2.10)
+    R (>= 3.1.0)
+Imports: 
+    Rcpp (>= 1.0.7),
+    rgl,
+    Rvcg
+Suggests: 
+    BH,
+    misc3d,
+    onion,
+    uniformly
+LinkingTo: 
+    Rcpp,
+    RcppCGAL,
+    RcppEigen
+Encoding: UTF-8
 LazyData: true
 LazyDataCompression: bzip2
+RoxygenNote: 7.2.0
+SystemRequirements: C++ 14, gmp, mpfr
