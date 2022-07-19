@@ -12,13 +12,13 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
 // jet_normals_cpp
-Rcpp::NumericMatrix jet_normals_cpp(Rcpp::NumericMatrix pts, unsigned nb_neighbors);
+Rcpp::NumericMatrix jet_normals_cpp(const Rcpp::NumericMatrix pts, const unsigned nb_neighbors);
 RcppExport SEXP _SurfaceReconstruction_jet_normals_cpp(SEXP ptsSEXP, SEXP nb_neighborsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< Rcpp::NumericMatrix >::type pts(ptsSEXP);
-    Rcpp::traits::input_parameter< unsigned >::type nb_neighbors(nb_neighborsSEXP);
+    Rcpp::traits::input_parameter< const Rcpp::NumericMatrix >::type pts(ptsSEXP);
+    Rcpp::traits::input_parameter< const unsigned >::type nb_neighbors(nb_neighborsSEXP);
     rcpp_result_gen = Rcpp::wrap(jet_normals_cpp(pts, nb_neighbors));
     return rcpp_result_gen;
 END_RCPP
@@ -36,12 +36,12 @@ BEGIN_RCPP
 END_RCPP
 }
 // AFSreconstruction_cpp
-Rcpp::List AFSreconstruction_cpp(Rcpp::NumericMatrix pts);
+Rcpp::List AFSreconstruction_cpp(const Rcpp::NumericMatrix pts);
 RcppExport SEXP _SurfaceReconstruction_AFSreconstruction_cpp(SEXP ptsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< Rcpp::NumericMatrix >::type pts(ptsSEXP);
+    Rcpp::traits::input_parameter< const Rcpp::NumericMatrix >::type pts(ptsSEXP);
     rcpp_result_gen = Rcpp::wrap(AFSreconstruction_cpp(pts));
     return rcpp_result_gen;
 END_RCPP

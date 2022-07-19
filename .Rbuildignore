@@ -11,3 +11,5 @@
 ^inst/AFSexamples$
 ^\.settings$
 ^\.project$
+^cran-comments\.md$
+^CRAN-SUBMISSION$

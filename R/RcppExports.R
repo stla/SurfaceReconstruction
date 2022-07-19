@@ -2,22 +2,22 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 jet_normals_cpp <- function(pts, nb_neighbors) {
-    .Call('_SurfaceReconstruction_jet_normals_cpp', PACKAGE = 'SurfaceReconstruction', pts, nb_neighbors)
+    .Call(`_SurfaceReconstruction_jet_normals_cpp`, pts, nb_neighbors)
 }
 
 pca_normals_cpp <- function(pts, nb_neighbors) {
-    .Call('_SurfaceReconstruction_pca_normals_cpp', PACKAGE = 'SurfaceReconstruction', pts, nb_neighbors)
+    .Call(`_SurfaceReconstruction_pca_normals_cpp`, pts, nb_neighbors)
 }
 
 AFSreconstruction_cpp <- function(pts) {
-    .Call('_SurfaceReconstruction_AFSreconstruction_cpp', PACKAGE = 'SurfaceReconstruction', pts)
+    .Call(`_SurfaceReconstruction_AFSreconstruction_cpp`, pts)
 }
 
 AFSreconstruction_perimeter_cpp <- function(pts, per) {
-    .Call('_SurfaceReconstruction_AFSreconstruction_perimeter_cpp', PACKAGE = 'SurfaceReconstruction', pts, per)
+    .Call(`_SurfaceReconstruction_AFSreconstruction_perimeter_cpp`, pts, per)
 }
 
 Poisson_reconstruction_cpp <- function(pts, normals, spacing, sm_angle, sm_radius, sm_distance) {
-    .Call('_SurfaceReconstruction_Poisson_reconstruction_cpp', PACKAGE = 'SurfaceReconstruction', pts, normals, spacing, sm_angle, sm_radius, sm_distance)
+    .Call(`_SurfaceReconstruction_Poisson_reconstruction_cpp`, pts, normals, spacing, sm_angle, sm_radius, sm_distance)
 }
 
