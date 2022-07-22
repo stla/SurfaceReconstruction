@@ -2,7 +2,8 @@ Type: Package
 Package: SurfaceReconstruction
 Title: Surface Reconstruction Using the 'CGAL' C++ Library
 Version: 0.1.0
-Author: Stéphane Laurent
+Authors@R: 
+    person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre"))
 Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
 Description: Provides some 3d surface reconstruction algorithms: Poisson
     surface reconstruction and advanced front surface reconstruction. They
@@ -22,10 +23,10 @@ Suggests:
     onion,
     uniformly
 LinkingTo: 
+    BH,
     Rcpp,
     RcppCGAL,
-    RcppEigen,
-    BH
+    RcppEigen
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: bzip2
